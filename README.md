@@ -21,8 +21,12 @@ In addition, AquaLens integrates deep learning-based object detection using a YO
 ---
 
 ## **Technologies Used**
-- **Languages:** Python
-- **Libraries:** OpenCV, NumPy, Matplotlib, Tkinter
+- **Programming Language:** Python  
+- **Image Processing Libraries:** OpenCV and NumPy  
+- **Visualization:** Matplotlib  
+- **Graphical User Interface (GUI):** Tkinter  
+- **Object Detection Model:** YOLO (via the Ultralytics YOLO library)    
+- **Development Environment:** Visual Studio Code (and optionally Jupyter Notebook for testing non-GUI functionality)
 
 ---
 
