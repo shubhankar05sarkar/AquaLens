@@ -83,7 +83,7 @@ AquaLens is an innovative image processing application designed to enhance under
 ---
 
 ### **8. Histogram Visualization**  
-![Histogram Visualization]((https://github.com/shubhankar05sarkar/AquaLens/blob/969d7deb641a1b681445ba5b1b475120a3b685fa/Screenshot%20(13).png) 
+![Histogram Visualization](https://github.com/shubhankar05sarkar/AquaLens/blob/969d7deb641a1b681445ba5b1b475120a3b685fa/Screenshot%20(13).png) 
 *A histogram of the grayscale image with Otsu's threshold value marked for optimal thresholding.*
 
 ---
