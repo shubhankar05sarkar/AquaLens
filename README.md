@@ -1,6 +1,8 @@
 # **AquaLens**
 
-AquaLens is an innovative image processing application designed to enhance underwater images for better analysis. It uses advanced preprocessing techniques to assist in marine monitoring and conservation efforts. The project includes interactive tools to visualize histograms, detect edges, and predict threshold values for efficient image analysis.
+AquaLens is an innovative image processing application focused on enhancing underwater imagery to support marine monitoring and conservation efforts. The project employs advanced digital image processing techniques—such as converting images to grayscale, applying various noise reduction filters (Gaussian, Median, Bilateral), and using edge detection algorithms—to improve the clarity and quality of underwater images. This preprocessing not only makes the images visually clearer but also prepares them for subsequent analysis steps.
+
+In addition, AquaLens integrates deep learning-based object detection using a YOLO (You Only Look Once) model to automatically identify objects in underwater scenes, such as plastic, debris, and marine species. The tool draws bounding boxes around detected objects and provides confidence scores, making it easier to quantify and analyze the objects present. To further support data-driven decision-making, the project includes visualization utilities that generate histograms (with Otsu’s thresholding) and compare edge detection results, offering insights into the image characteristics and processing effectiveness.
 
 ---
 
