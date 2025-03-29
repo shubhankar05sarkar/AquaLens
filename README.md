@@ -38,72 +38,59 @@ AquaLens is an innovative image processing application designed to enhance under
 
 ---
 
-Here's the updated **Screenshots** section in the `README.md` file with placeholders for the images you've specified:
-
----
-
-Here's the updated **Screenshots** section, now including a comparison of edge detection techniques:
-
----
-
 ## **Screenshots**
 
 ### **1. AquaLens GUI**  
-![AquaLens GUI](screenshots/AquaLens_GUI.png)  
+![AquaLens GUI](https://github.com/shubhankar05sarkar/AquaLens/blob/969d7deb641a1b681445ba5b1b475120a3b685fa/Screenshot%20(1).png)  
 *This is the main interface of AquaLens where users can upload and process underwater images.*
 
 ---
 
 ### **2. Grayscale Conversion Results**  
-![Grayscale Conversion Results](screenshots/Grayscale_Conversion.png)  
+![Grayscale Conversion Results](https://github.com/shubhankar05sarkar/AquaLens/blob/969d7deb641a1b681445ba5b1b475120a3b685fa/Screenshot%20(6).png)  
 *The result of converting an underwater image to grayscale for further processing.*
 
 ---
 
 ### **3. Gaussian Blur Results**  
-![Gaussian Blur Results](screenshots/Gaussian_Blur.png)  
+![Gaussian Blur Results](https://github.com/shubhankar05sarkar/AquaLens/blob/969d7deb641a1b681445ba5b1b475120a3b685fa/Screenshot%20(7).png)  
 *Noise reduction using Gaussian Blur to enhance image clarity.*
 
 ---
 
 ### **4. Median Blur Results**  
-![Median Blur Results](screenshots/Median_Blur.png)  
+![Median Blur Results](https://github.com/shubhankar05sarkar/AquaLens/blob/969d7deb641a1b681445ba5b1b475120a3b685fa/Screenshot%20(8).png)  
 *Noise reduction using Median Blur, particularly effective for salt-and-pepper noise.*
 
 ---
 
 ### **5. Bilateral Filter Results**  
-![Bilateral Filter Results](screenshots/Bilateral_Filter.png)  
+![Bilateral Filter Results](https://github.com/shubhankar05sarkar/AquaLens/blob/969d7deb641a1b681445ba5b1b475120a3b685fa/Screenshot%20(9).png)  
 *Noise reduction using Bilateral Filtering while preserving edges.*
 
 ---
 
 ### **6. Edge Detection Results**  
-![Edge Detection Results](screenshots/Edge_Detection.png)  
+![Edge Detection Results](https://github.com/shubhankar05sarkar/AquaLens/blob/969d7deb641a1b681445ba5b1b475120a3b685fa/Screenshot%20(10).png)  
 *Detection of edges in the processed image using the Canny edge detection algorithm.*
 
 ---
 
 ### **7. Object Detection Results**  
-![Object Detection Results](screenshots/Object_Detection.png)  
+![Object Detection Results](https://github.com/shubhankar05sarkar/AquaLens/blob/969d7deb641a1b681445ba5b1b475120a3b685fa/Screenshot%20(11).png)  
 *Highlighted objects detected in the underwater image with their respective labels and confidence scores.*
 
 ---
 
 ### **8. Histogram Visualization**  
-![Histogram Visualization](screenshots/Histogram.png)  
+![Histogram Visualization]((https://github.com/shubhankar05sarkar/AquaLens/blob/969d7deb641a1b681445ba5b1b475120a3b685fa/Screenshot%20(13).png) 
 *A histogram of the grayscale image with Otsu's threshold value marked for optimal thresholding.*
 
 ---
 
 ### **9. Comparison of Edge Detection Techniques**  
-![Edge Detection Comparison](screenshots/Edge_Detection_Comparison.png)  
+![Edge Detection Comparison](https://github.com/shubhankar05sarkar/AquaLens/blob/969d7deb641a1b681445ba5b1b475120a3b685fa/Screenshot%20(12).png)  
 *A comparison of edge pixel counts for images processed using different noise reduction techniques, visualized as a bar chart.*
-
----
-Yes, you should absolutely add credits to the dataset you used from Kaggle. Giving proper credit demonstrates ethical project practices and acknowledges the contribution of the dataset creators. It also helps others reproduce or further explore your work.
-
-Here’s how you can add the credits in your README:
 
 ---
 
