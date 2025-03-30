@@ -6,7 +6,7 @@ from PIL import Image, ImageTk
 from preprocessing import to_grayscale, reduce_noise_gaussian, reduce_noise_median, reduce_noise_bilateral
 from segmentation import detect_edges
 from utils import show_images, plot_edge_counts, plot_histogram_with_threshold
-from model import detect_and_draw  # We use detect_and_draw for detection with bounding boxes
+from model import detect_and_draw 
 
 class AquaLensApp:
     def __init__(self, root):
@@ -16,7 +16,7 @@ class AquaLensApp:
         self.root.configure(bg='#f2f6fc')
 
         self.image_path = None
-        self.original_image = None  # Image in BGR format loaded via OpenCV
+        self.original_image = None 
         self.processed_images = {}
 
         self.style = ttk.Style()
@@ -63,7 +63,6 @@ class AquaLensApp:
         processing_frame = ttk.Frame(control_frame)
         processing_frame.pack(fill='x', pady=10)
 
-        # List of processing buttons including the new "Histogram" button and "Detect"
         buttons = [
             ("Grayscale", self.apply_grayscale),
             ("Gaussian Blur", self.apply_gaussian_blur),
@@ -77,7 +76,6 @@ class AquaLensApp:
         for idx, (text, command) in enumerate(buttons):
             ttk.Button(processing_frame, text=text, command=command, width=15).grid(row=0, column=idx, padx=5)
 
-        # Image Preview Area
         display_frame = ttk.LabelFrame(main_frame, text="Image Preview", padding=10, relief='ridge', style='TFrame')
         display_frame.pack(fill='both', expand=True)
         self.canvas = tk.Canvas(display_frame, bg='white')
@@ -85,7 +83,6 @@ class AquaLensApp:
         self.image_label = ttk.Label(self.canvas)
         self.image_label.pack(expand=True)
 
-        # Footer with Reset and Zoom controls
         footer_frame = ttk.Frame(main_frame)
         footer_frame.pack(fill='x', pady=(20, 0))
         ttk.Button(footer_frame, text="Reset", command=self.reset_app, width=15).pack(side='left', padx=5)
@@ -108,11 +105,7 @@ class AquaLensApp:
             self.display_image(self.original_image)
 
     def display_image(self, image):
-        """
-        Display the image on the canvas. We scale down the image to fit within the canvas,
-        but never upscale it to preserve the original pixel quality.
-        """
-        # Convert image to RGB for display
+        
         image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
         pil_image = Image.fromarray(image_rgb)
 
@@ -120,7 +113,6 @@ class AquaLensApp:
         canvas_height = self.canvas.winfo_height() if self.canvas.winfo_height() > 1 else 500
         img_width, img_height = pil_image.size
 
-        # Calculate scale factor; don't upscale beyond original size: use min(1, factor)
         factor = min(canvas_width / img_width, canvas_height / img_height)
         scale = min(1, factor * self.zoom_var.get())
 
@@ -190,16 +182,13 @@ class AquaLensApp:
         plot_edge_counts(images, titles)
 
     def run_detection(self):
-        """
-        Run YOLO detection on the loaded image and display the image with bounding boxes.
-        """
+        
         if not self.check_image_loaded():
             return
         detection_img = detect_and_draw(self.original_image)
         detection_img_rgb = cv2.cvtColor(detection_img, cv2.COLOR_BGR2RGB)
         pil_image = Image.fromarray(detection_img_rgb)
 
-        # Use the same scaling logic as display_image (only downscaling)
         canvas_width = self.canvas.winfo_width() if self.canvas.winfo_width() > 1 else 900
         canvas_height = self.canvas.winfo_height() if self.canvas.winfo_height() > 1 else 500
         img_width, img_height = pil_image.size
@@ -214,12 +203,10 @@ class AquaLensApp:
         self.image_label.place(relx=0.5, rely=0.5, anchor="center")
 
     def run_histogram(self):
-        """
-        Convert the loaded image to grayscale and display its histogram along with the optimal threshold.
-        """
+        
         if not self.check_image_loaded():
             return
-        # Convert image to grayscale
+        
         gray_image = cv2.cvtColor(self.original_image, cv2.COLOR_BGR2GRAY)
         from utils import plot_histogram_with_threshold
         plot_histogram_with_threshold(gray_image)
