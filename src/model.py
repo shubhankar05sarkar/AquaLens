@@ -4,7 +4,7 @@ from ultralytics import YOLO
 
 # Update the MODEL_PATH to point to your model file.
 # For example, if you placed your model file in a folder named "models" at the project root:
-MODEL_PATH = r"C:\Users\shubh\OneDrive\Desktop\AquaLens\models\best.pt"
+MODEL_PATH = r"C:\Users\shubh\OneDrive\Desktop\Projects\AquaLens\models\best.pt"
 
 # Load the YOLO model using ultralytics
 model = YOLO(MODEL_PATH)
