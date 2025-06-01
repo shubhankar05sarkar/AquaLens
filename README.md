@@ -44,7 +44,7 @@ In addition, AquaLens integrates deep learning-based object detection using a YO
 
 ---
 
-## **Screenshots**
+## User Interface
 
 ### **1. AquaLens GUI**  
 ![AquaLens GUI](https://github.com/shubhankar05sarkar/AquaLens/blob/969d7deb641a1b681445ba5b1b475120a3b685fa/Screenshot%20(1).png)  
